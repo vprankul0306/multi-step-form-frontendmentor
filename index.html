@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Multi-step form</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav_panel">
+        <img
+          src="assets/images/bg-sidebar-desktop.svg"
+          alt=""
+          class="background_img"
+        />
+        <div class="nav_btns">
+          <div class="btn_info">
+            <button class="nav_btn" id="nav_btn">1</button>
+            <div class="info">
+              <p class="step_count">STEP 1</p>
+              <p class="step_info">YOUR INFO</p>
+            </div>
+          </div>
+          <div class="btn_info">
+            <button class="nav_btn" id="nav_btn">2</button>
+            <div class="info">
+              <p class="step_count">STEP 2</p>
+              <p class="step_info">SELECT PLAN</p>
+            </div>
+          </div>
+          <div class="btn_info">
+            <button class="nav_btn" id="nav_btn">3</button>
+            <div class="info">
+              <p class="step_count">STEP 3</p>
+              <p class="step_info">ADD-ONS</p>
+            </div>
+          </div>
+          <div class="btn_info">
+            <button class="nav_btn" id="nav_btn">4</button>
+            <div class="info">
+              <p class="step_count">STEP 4</p>
+              <p class="step_info">SUMMARY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="personal_info">
+        <div class="main_heading">
+          <h1 class="heading">Personal info</h1>
+          <p class="subheading">
+            Please provide your name, email address, and phone number.
+          </p>
+        </div>
+        <div class="input_area">
+          <div class="input_field">
+            <label for="name" class="label">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="e.g. Stephen King"
+              class="input_box"
+            />
+          </div>
+          <div class="input_field">
+            <label for="email" class="label">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+              class="input_box"
+            />
+          </div>
+          <div class="input_field">
+            <label for="phone" class="label">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="e.g. +1 234 567 890"
+              class="input_box"
+            />
+          </div>
+        </div>
+        <div class="btns">
+          <button class="btn" id="btn">Next Step</button>
+        </div>
+      </div>
+      <div class="plan_selection">
+        <h1 class="heading">Select your plan</h1>
+        <p class="subheading">
+          You have the option of monthly or yearly billing.
+        </p>
+        <div class="plans">
+          <button class="arcade_btn">
+            <img
+              src="assets/images/icon-arcade.svg"
+              alt=""
+              class="arcade_img"
+            />
+            <p class="plan_name">Arcade</p>
+            <p class="plan_price">$9/mo</p>
+          </button>
+          <button class="advanced_btn">
+            <img
+              src="assets/images/icon-advanced.svg"
+              alt=""
+              class="advanced_img"
+            />
+            <p class="plan_name">Advanced</p>
+            <p class="plan_price">$12/mo</p>
+          </button>
+          <button class="pro_btn">
+            <img src="assets/images/icon-pro.svg" alt="" class="pro_img" />
+            <p class="plan_name">Pro</p>
+            <p class="plan_price">$15/mo</p>
+          </button>
+        </div>
+        <div class="plan_toggle">
+          <p class="monthly">Monthly</p>
+          <button class="toggle"></button>
+          <p class="yearly">Yearly</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
